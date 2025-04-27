@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Foydalanuvchi Sahifasi</title>
+    <link rel="stylesheet" href="css/user.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="profile">
+            <img src="https://e7.pngegg.com/pngimages/178/595/png-clipart-user-profile-computer-icons-login-user-avatars-monochrome-black.png" alt="User Photo" />
+            <div class="profile-info">
+                <h2 class="js-name">Salom, Abdyrasul 👋</h2>
+                <p class="js-email">admin@example.com</p>
+            </div>
+            
+            <button class="js-post-add btn">+ Post qo'shish</button>
+        </div>
+
+        <template class="js-post-temp">
+            <div>
+                <div class="post-content">
+                    Ikkinchi post. Oddiy matn, ammo yaxshi dizayn bilan.
+                </div>
+                <div class="actions">
+                    <button class="js-edit edit">Edit</button>
+                    <button class="js-delete delete">Delete</button>
+                </div>
+            
+            </div> <hr><br>
+        </template>
+
+        <div class="js-post post">
+            
+        </div>
+
+        <div class="logout">
+            <a href="/">⬅ Bosh sahifaga qaytish</a>
+        </div>
+        <button class="js-btn-exit btn" style="float: right;">Chiqish</button>
+    </div>
+    <script src="js/user.js"></script>
+</body>
+
+</html>

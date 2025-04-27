@@ -1,0 +1,19 @@
+{
+  "name": "lesson8",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "config": "^3.3.12",
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  }
+}

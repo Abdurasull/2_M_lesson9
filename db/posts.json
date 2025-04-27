@@ -1,0 +1,11 @@
+[
+    {
+        "userId": 1,
+        "posts": [
+            {
+                "id": 1,
+                "body": "Assalomu alaykum"
+            }
+        ]
+    }
+]

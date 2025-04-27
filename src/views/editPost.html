@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Postni O'zgartirish</title>
+    <link rel="stylesheet" href="css/editPost.css">
+</head>
+
+<body>
+
+    <div class="form-container">
+        <h2>Postni O'zgartirish</h2>
+        <form class="js-form" action="/update-post" method="POST">
+
+            <label for="content">Post matni</label>
+            <textarea class="js-textarea" id="content" name="content" rows="6" placeholder="Post matnini kiriting" required></textarea>
+
+            <button type="submit">Yangilash</button>
+        </form>
+    </div>
+<script src="js/editPost.js"></script>
+</body>
+
+</html>
