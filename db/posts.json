@@ -1,33 +1,35 @@
 [
     {
         "userId": 1,
-        "posts": [
-            {
-                "id": 1,
-                "body": "Assalomu alaykum, bollar"
-            },
-            {
-                "id": 2,
-                "body": "Ilmga yetgan ayog, qanotga aylanur"
-            }
-        ]
+        "posts": []
     },
     {
         "userId": 2,
+        "posts": []
+    },
+    {
+        "userId": 3,
+        "posts": []
+    },
+    {
+        "userId": 4,
+        "posts": []
+    },
+    {
+        "userId": 5,
         "posts": [
             {
                 "id": 1,
-                "body": "Assalomu alaykum hammaga"
+                "body": "jksjdgvc"
             }
         ]
     },
     {
-        "userId": 3,
-        "posts": [
-            {
-                "id": 1,
-                "body": "salom\n"
-            }
-        ]
+        "userId": 6,
+        "posts": []
+    },
+    {
+        "userId": 7,
+        "posts": []
     }
 ]

@@ -6,13 +6,16 @@ const regex = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([
 
 export const userValidatorRegister = async (req, res, next) => {
     try{
-        let {username, email, password} = req.body;
+        
+        let {username, email} = req.body;
         if(!username) throw new ClientError("username is required", 400);
         if(!email) throw new ClientError("email is required", 400);
         
         if(!regex.test(email)) throw new ClientError("email is not valid", 400);
         const users = await req.readFile("users.json");
+        
         if(users.some(users => users.email === email)) throw new ClientError("email already exists", 400);
+        
         return await next();
 
     }catch(err){
