@@ -20,9 +20,7 @@ export const postController = {
         try{
         
             let posts = await req.readFile("posts.json");
-            console.log(posts);
             let oldPost = await posts.find(post => post.userId == req.params.userId);
-            console.log(req.params.userId);
             
             let Id = oldPost.posts.length ? oldPost.posts[oldPost.posts.length -1 ].id + 1 : 1;
             let newPost = {

@@ -1,6 +1,33 @@
 [
     {
         "userId": 1,
-        "posts": []
+        "posts": [
+            {
+                "id": 1,
+                "body": "Assalomu alaykum, bollar"
+            },
+            {
+                "id": 2,
+                "body": "Ilmga yetgan ayog, qanotga aylanur"
+            }
+        ]
+    },
+    {
+        "userId": 2,
+        "posts": [
+            {
+                "id": 1,
+                "body": "Assalomu alaykum hammaga"
+            }
+        ]
+    },
+    {
+        "userId": 3,
+        "posts": [
+            {
+                "id": 1,
+                "body": "salom\n"
+            }
+        ]
     }
 ]

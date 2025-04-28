@@ -1,5 +1,5 @@
 import { ClientError, globalError } from "../utils/error.js";
-
+import sha256 from "sha256";
 
 const regex = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
 
@@ -22,16 +22,17 @@ export const userValidatorRegister = async (req, res, next) => {
 
 export const userValidatorLogin = async (req, res, next) => {
     try{
-        
         let {username, password} = req.body;
-    
+        
         const users = await req.readFile("users.json");
         
         let user = await users.find(user => user.email == username);
+        
+        
         if(!user) throw new ClientError("user not found", 404);
         
-        if(password != user.password) throw new ClientError("password is incorrect", 400);
-
+        if(sha256(password) != user.password) throw new ClientError("password is incorrect", 400);
+    
         return await next();
 
     } catch(err){

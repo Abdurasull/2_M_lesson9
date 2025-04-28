@@ -4,5 +4,17 @@
         "email": "dam@gmail.com",
         "password": "0ffe1abd1a08215353c233d6e009613e95eec4253832a761af28ff37ac5a150c",
         "id": 1
+    },
+    {
+        "username": "Bobur",
+        "email": "bobur@gmail.com",
+        "password": "5994471abb01112afcc18159f6cc74b4f511b99806da59b3caf5a9c173cacfc5",
+        "id": 2
+    },
+    {
+        "username": "Ali",
+        "email": "Ali@gmail.com",
+        "password": "5994471abb01112afcc18159f6cc74b4f511b99806da59b3caf5a9c173cacfc5",
+        "id": 3
     }
 ]

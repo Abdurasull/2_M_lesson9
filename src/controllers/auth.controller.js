@@ -28,6 +28,7 @@ class AuthController {
             try{
                 let newUser = req.body;
                 let users = await req.readFile("users.json");
+                
                 let user = await users.find(user => user.email == newUser.username && user.password == sha256(newUser.password));
                 if(!user){
                     return await res.status(404).json({message: "User not found", status: 404});
