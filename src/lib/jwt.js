@@ -6,7 +6,6 @@ const {sign, verify} = pkg;
 
 
 export const jwtToken = {
-    axmoq: sign("salom", token_key),
     createToken: (payload) => sign(payload, token_key),
     verifyToken: (token) => verify(token, token_key)
 }

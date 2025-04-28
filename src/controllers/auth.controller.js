@@ -1,7 +1,7 @@
 import { ClientError, globalError } from "../utils/error.js"
 import sha256 from "sha256";
 import { jwtToken } from "../lib/jwt.js";
-const {createToken, verifyToken, axmoq} = jwtToken;
+const {createToken, verifyToken} = jwtToken;
 
 class AuthController {
     constructor(){

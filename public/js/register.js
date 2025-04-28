@@ -20,6 +20,7 @@ async function getdata(){
         });
         const data = await response.json();
         if(data.status == 201){
+            console.log(data);
             window.localStorage.setItem("username", JSON.stringify(data.user));
             window.location.href = "/user";
         } else {
@@ -33,9 +34,6 @@ async function getdata(){
 elForm.addEventListener("submit", (evt) => {
     evt.preventDefault();
     getdata();
-    elUsername.value = "";
-    elEmail.value = "";
-    elPassword.value = "";
     
 
     

@@ -31,5 +31,13 @@
     {
         "userId": 7,
         "posts": []
+    },
+    {
+        "userId": 8,
+        "posts": []
+    },
+    {
+        "userId": 9,
+        "posts": []
     }
 ]
