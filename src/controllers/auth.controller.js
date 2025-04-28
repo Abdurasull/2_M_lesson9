@@ -1,4 +1,5 @@
 import { ClientError, globalError } from "../utils/error.js"
+import sha256 from "sha256";
 
 class AuthController {
     constructor(){
@@ -8,6 +9,7 @@ class AuthController {
                 let users = await req.readFile("users.json");
                 let id = users.length ? users[users.length -1].id + 1 : 1;
                 newUser.id = id;
+                newUser.password = sha256(newUser.password);
 
                 // Har yangi qo`shilgan foydalanuvchiga postlar ro`y beriladi
                 let posts = await req.readFile("posts.json");
@@ -26,7 +28,7 @@ class AuthController {
             try{
                 let newUser = req.body;
                 let users = await req.readFile("users.json");
-                let user = await users.find(user => user.email == newUser.username && user.password == newUser.password);
+                let user = await users.find(user => user.email == newUser.username && user.password == sha256(newUser.password));
                 if(!user){
                     return await res.status(404).json({message: "User not found", status: 404});
                 }

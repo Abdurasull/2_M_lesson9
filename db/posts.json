@@ -1,15 +1,6 @@
 [
     {
         "userId": 1,
-        "posts": [
-            {
-                "id": 1,
-                "body": "Assalomu alaykum"
-            },
-            {
-                "id": 2,
-                "body": "sdaacsa"
-            }
-        ]
+        "posts": []
     }
 ]
