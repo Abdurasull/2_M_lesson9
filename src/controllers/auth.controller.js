@@ -45,7 +45,11 @@ class AuthController {
                     return await res.status(404).json({message: "User not found", status: 404});
                 }
                 
-                return await res.status(201).json({message: "User created", status: 201, user: {email: user.email, username: user.username, id: user.id}});
+                return await res.status(201).json({message: "User created", 
+                    status: 201, 
+                    user: {email: user.email, username: user.username, id: user.id},
+                    accessToken: createToken({id: newUser.id, userAgent: req.headers["user-agent"]})
+                });
                 
             }catch(err){
                 await globalError(err, res);

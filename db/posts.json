@@ -34,10 +34,23 @@
     },
     {
         "userId": 8,
-        "posts": []
+        "posts": [
+            {
+                "id": 1,
+                "body": "kugcfjkgvj"
+            },
+            {
+                "id": 2,
+                "body": "Assalomu alaykum"
+            }
+        ]
     },
     {
         "userId": 9,
+        "posts": []
+    },
+    {
+        "userId": 10,
         "posts": []
     }
 ]
